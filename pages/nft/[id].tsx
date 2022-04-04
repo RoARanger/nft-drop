@@ -2,16 +2,13 @@ import { Fragment, useState, useEffect } from 'react'
 import { useAddress, useNFTDrop } from '@thirdweb-dev/react'
 import { useTheme } from 'next-themes'
 import { Dialog, Transition } from '@headlessui/react'
-
 import Link from 'next/link'
 import Image from 'next/image'
 import { GetServerSideProps } from 'next'
 import { sanityClient, urlFor } from '../../sanity'
 import { Collection } from '../../typings'
-
 import { BigNumber } from 'ethers'
 import toast, { Toaster } from 'react-hot-toast'
-
 import Container from '../../layouts/Container'
 
 interface Props {
