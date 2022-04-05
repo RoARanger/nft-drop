@@ -1,12 +1,9 @@
 import type { GetServerSideProps, NextPage } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
-
 import { sanityClient, urlFor } from '../sanity'
 import { Collection } from '../typings'
-
 import Container from '../layouts/Container'
-
 import bayc from '../public/bayc.png'
 import mayc from '../public/mayc.png'
 import punk from '../public/punk.png'
@@ -21,10 +18,10 @@ interface Props {
 const Home = ({ collections }: Props) => {
   return (
     <Container>
-      {/* TESTING */}
+      {/* Top Section */}
       <div className="grid flex-grow items-center gap-0 pb-12 md:grid-cols-2 md:gap-24 md:pb-48 md:pt-24">
         <div className="col-span-1 mb-12 mt-16 flex flex-col space-y-6 rounded-xl text-center md:mb-0 md:text-left  lg:justify-center lg:space-y-2">
-          {/* HERO COPY */}
+          {/* NFT Display */}
           <h1 className="font-poppins text-3xl font-extralight dark:text-white  md:max-w-md md:text-6xl">
             The best <span className="font-bold text-purple-500">NFTS</span> in
             one place
@@ -32,7 +29,7 @@ const Home = ({ collections }: Props) => {
         </div>
         <div className="col-span-1">
           <div className="grid grid-cols-3 gap-3 md:gap-6">
-            {/* HERO IMAGES */}
+            {/* NFT IMAGES */}
             <div className="flex flex-col gap-3 pt-24 md:gap-6">
               <div className="origin-top-left rounded-xl bg-gradient-to-bl from-pink-600/25 to-blue-400/25 p-1.5 transition duration-500 ease-in-out hover:-translate-y-1">
                 <Image
@@ -102,7 +99,8 @@ const Home = ({ collections }: Props) => {
           </div>
         </div>
       </div>
-      {/* TESTING */}
+
+      {/* Bottom Section */}
       <div className="pt-12 pb-24 md:grid md:grid-cols-4">
         <div className="md:col-span-4 xl:col-span-3 xl:col-start-2">
           <section className="pb-12 lg:pb-16">

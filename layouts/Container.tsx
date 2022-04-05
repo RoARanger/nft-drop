@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 import { useAddress, useDisconnect, useMetamask } from '@thirdweb-dev/react'
 import Link from 'next/link'
-
 import Button from '../components/Button'
 import Footer from '../components/Footer'
 
